@@ -6,7 +6,7 @@ platform :ios, '9.0' # (define required version)
 
 # Uncomment to use a local copy of PlayKit
 #PLAYKIT_LOCAL='../../playkit-ios'
-
+PLAYKIT_LOCAL = '../../../Original_repos/playkit-ios'
 # Uncomment to use a git copy
 #PLAYKIT_GIT='https://github.com/kaltura/playkit-ios.git'
 
@@ -19,7 +19,7 @@ abstract_target 'SharedPods' do
     if defined? PLAYKIT_GIT
       pod 'PlayKit', :git => PLAYKIT_GIT, :branch => PLAYKIT_BRANCH
       else
-      pod 'PlayKit', '~> 3.12'
+      pod 'PlayKit', '~> 3.20.1'
     end
   end
   
